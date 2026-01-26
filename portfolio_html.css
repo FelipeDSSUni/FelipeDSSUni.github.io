@@ -1,6 +1,6 @@
 h1, h2, h3 { margin:0; padding:0; font-weight:normal; font-style:normal; }
-a { color:#5D5D9E; } 
-a:visited { color:#5D5D9E; } 
+a { color:#1E1EC6; } 
+a:visited { color:#1E1EC6; } 
 a:active { color:#5C615E; } 
 a:hover { color:#B2B3B4; } 
 #menu_103b5c73 a { text-decoration: none; }
@@ -49,10 +49,20 @@ z-index: 999; }
 #shapedivider_34042f14_padding { margin: 0; display: block; position: relative;  }
 #shapedivider_294a0ae8 { vertical-align: top; position:relative; display: inline-block; width:80%; min-height:40px; max-width:1000px; background:none;  }
 #shapedivider_294a0ae8_padding { margin: 0; display: block; position: relative;  }
-#container_d7f7436 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:800px; max-width:1000px; background-color:#7B4289;  }
+#container_d7f7436 { vertical-align: top; position:relative; display: inline-block; width:80%; min-height:800px; max-width:1000px; background-color:#7B4289;  }
 #container_d7f7436_padding { margin: 10px; display: block;  }
 #heading_7446523 { vertical-align: bottom; position:relative; display: inline-block; background:none; font-size:24pt; font-family:Arial, Helvetica, sans-serif; color:#000000; text-align:left; text-decoration:underline;  }
 .textstyle6 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+#container_27649c22 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:150px; background:none;  }
+#container_27649c22_padding { margin: 0px 0px 10px 0px;display: block;  }
+#img_3d119465 { vertical-align: top; position:relative; display: inline-block; width:100%; max-width:500px; background:none; height:auto;  }
+#container_71ad055a { vertical-align: top; position:relative; display: inline-block; min-width:30%; background:none;  }
+#container_71ad055a_padding { margin: 10px; display: block;  }
+#container_7834793e { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:150px; background:none;  }
+#container_7834793e_padding { margin: 0px 0px 10px 0px;display: block;  }
+#img_75690335 { vertical-align: top; position:relative; display: inline-block; width:100%; max-width:500px; background:none; height:auto;  }
+#container_389f94e9 { vertical-align: top; position:relative; display: inline-block; min-width:30%; background:none;  }
+#container_389f94e9_padding { margin: 10px; display: block;  }
 #container_1fc3bde7 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:80px; background:none;  }
 #shapedivider_15ebf00e { vertical-align: top; position:relative; display: inline-block; width:80%; min-height:40px; max-width:1000px; background:none;  }
 #shapedivider_15ebf00e_padding { margin: 0; display: block; position: relative;  }
