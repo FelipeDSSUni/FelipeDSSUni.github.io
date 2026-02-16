@@ -53,9 +53,9 @@ z-index: 999; }
 #container_12d1eed0_padding { margin: 10px; display: block;  }
 #heading_797a0fc1 { vertical-align: bottom; position:relative; display: inline-block; background:none; font-size:24pt; font-family:Arial, Helvetica, sans-serif; color:#000000; text-align:left; text-decoration:underline;  }
 .textstyle6 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
-#carousel_499f9dd1 { overflow:hidden; position:absolute; left:1%; top:8%; width:100%; height:54%; background:none;  }
+#carousel_499f9dd1 { overflow:hidden; vertical-align: bottom; position:relative; display: inline-block; width:80%; background:none;  }
 #carousel_499f9dd1_page1 { position:absolute; left:0px; top:0px; width:100%; height:100%; background:none;  }
-#img_52d50cb9 { vertical-align: bottom; position:relative; display: inline-block; width:81%; background:none; height:auto;  }
+#img_52d50cb9 { vertical-align: bottom; position:relative; display: inline-block; width:50%; background:none; height:auto;  }
 #carousel_499f9dd1_page2 { position:absolute; left:0px; top:0px; width:100%; height:100%; background:none;  }
 #img_714e5a50 { vertical-align: bottom; position:relative; display: inline-block; width:50%; background:none; height:auto;  }
 #carousel_499f9dd1_page3 { position:absolute; left:0px; top:0px; width:100%; height:100%; background:none;  }
