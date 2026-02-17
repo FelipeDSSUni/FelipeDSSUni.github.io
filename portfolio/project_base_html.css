@@ -1,5 +1,5 @@
-a { color:#5D5D9E; } 
-a:visited { color:#5D5D9E; } 
+a { color:#E1EB27; } 
+a:visited { color:#A7EB29; } 
 a:active { color:#5C615E; } 
 a:hover { color:#B2B3B4; } 
 #menu_75efadc6 a { text-decoration: none; }
@@ -19,7 +19,7 @@ a:hover { color:#B2B3B4; }
 			#menu_75efadc6 .normalEntry { display: none; } 
 			#menu_75efadc6_menualignmentwrapper { width:120px; left: calc(50% - 60px);  } 
 		}
-body { background-color:#FFFFFF; padding:0;  margin: 0; }
+body { background-color:#64845E; padding:0;  margin: 0; }
 .textstyle1 { text-align:left; }
 #container_390aab84 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:80px; background-color:#C0C0C0; position: fixed;
 top: 0;
