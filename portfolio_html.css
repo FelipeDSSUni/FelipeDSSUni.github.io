@@ -19,7 +19,11 @@ a:hover { color:#B2B3B4; }
 			#menu_c364c6a .normalEntry { display: none; } 
 			#menu_c364c6a_menualignmentwrapper { width:120px; left: calc(100% - 120px);  } 
 		}
-body { background-color:#64845E; padding:0;  margin: 0; }
+:root {
+   --dark: #1A3E23;
+   --mid: #64845E;
+   --light: #A7EB29;
+}body { background-color:#64845E; padding:0;  margin: 0; }
 .textstyle1 { text-align:left; }
 #container_62a4ca17 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:80px; background-color:#C0C0C0; position: fixed;
 top: 0;

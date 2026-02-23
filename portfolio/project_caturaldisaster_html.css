@@ -58,7 +58,7 @@ z-index: 999; }
 #anchor_6058d15 { vertical-align: bottom; position:relative; display: inline-block;  }
 #container_6b6534ab { vertical-align: top; position:relative; display: inline-block; width:100%; background-color:#64845E;  }
 #container_3ca14934 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:150px; background-color:#1A3E23; background: linear-gradient(to bottom, #000000, #1A3E23);  }
-#container_1fbec4f5 { vertical-align: top; position:relative; display: inline-block; width:70%; min-height:800px; background-color:#C0C0C0;  }
+#container_1fbec4f5 { vertical-align: top; position:relative; display: inline-block; width:70%; background-color:#C0C0C0;  }
 #container_1fbec4f5_padding { margin: 10px; display: block;  }
 .textstyle6 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
 #placeh_7cb9c60c { vertical-align: bottom; position:relative; display: inline-block; width:100%;  }
@@ -68,9 +68,20 @@ z-index: 999; }
 #container_4a6c0c45_padding { margin: 10px; display: block;  }
 #youtube_1e24092a { vertical-align: bottom; position:relative; display: inline-block; width:100%; height:535px; background-color:#C0C0C0; --myprop: 535px;
 height: var(--myprop); }
-#img_433edc8a { vertical-align: bottom; position:relative; display: inline-block; width:100%; background:none; height:auto;  }
+#container_146acaae { vertical-align: top; position:relative; display: inline-block; width:90%; min-height:150px; background-color:#64845E;  }
+#container_146acaae_padding { margin: 10px 40px 10px 40px;display: block;  }
+.textstyle7 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#A7EB29;  }
+.textstyle8 { text-align:right; }
+#container_5ef93a62 { vertical-align: top; position:relative; display: inline-block; width:50%; min-height:175px; background:none;  }
+#container_5ef93a62_padding { margin: 10px; display: block;  }
+.textstyle9 { font-size:20pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
 @media only screen and (max-width: 991px)
 {
 		#container_4a6c0c45 { width:100%;  }
 		#youtube_1e24092a { --myprop: 267px; }
+		#container_5ef93a62 { width:100%;  }
+}
+@media only screen and (max-width: 640px)
+{
+		#container_146acaae * span { font-size:12pt;  }
 }
