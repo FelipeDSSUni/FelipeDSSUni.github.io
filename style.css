@@ -1,13 +1,16 @@
 :root {
-    --dark-colour: #193c22cc;
-    --mid-colour: #a1a1a1;
-    --lightcolour1: #a7eb29;
-    --lightcolour2: #e1eb27;
-    --gradientvar: linear-gradient(
-        to right,
-        var(--lightcolour1),
-        var(--lightcolour2)
-    );
+    --o1: #070506;
+    --o2: #2b2b2b;
+    --o3: #656565;
+    --o4: #f0edf1;
+    --o5: #8fdd28;
+
+    --l1: #e5eb00;
+    --l2: #00b643;
+    --lL: linear-gradient(to left, var(--l1), var(--l2));
+    --lR: linear-gradient(to right, var(--l1), var(--l2));
+    --lU: linear-gradient(to top, var(--l1), var(--l2));
+    --lD: linear-gradient(to bottom, var(--l1), var(--l2));
 }
 
 * {
@@ -20,8 +23,8 @@
     scroll-behavior: smooth;
     list-style: none;
     background: transparent;
-    background-color: black;
-    color: white;
+    background-color: var(--o1);
+    color: var(--o4);
 }
 
 header {
@@ -33,16 +36,14 @@ header {
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    background-color: var(--dark-colour);
+    background-color: #00b64346;
     backdrop-filter: blur(8px);
-    color: var(--lightcolour1);
     padding: 0.5rem 1.5rem;
     border-radius: 3rem;
     z-index: 1000;
 }
 
 .logo {
-    color: var(--lightcolour1);
     font-size: 1.3rem;
     font-weight: 600;
     text-wrap: nowrap;
@@ -70,7 +71,7 @@ li {
 
 li a {
     position: relative;
-    color: var(--lightcolour1);
+    color: var(--o5);
     font-weight: 300;
     background: transparent;
 }
@@ -84,7 +85,7 @@ li a::before {
     top: 25px;
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
-    background: var(--gradientvar);
+    background: var(--lR);
 }
 
 li a:hover::before {
@@ -97,19 +98,15 @@ li a:hover::before {
     border: none;
     font-weight: 500;
     font-size: 1rem;
-    color: var(--dark-colour);
+    color: var(--o1);
     cursor: pointer;
     text-wrap: nowrap;
     transition: 0.3s ease-in-out;
-    background: var(--gradientvar);
+    background: var(--lR);
 }
 
 .visit-btn:hover {
-    background: linear-gradient(
-        to right,
-        var(--lightcolour2),
-        var(--lightcolour1)
-    );
+    background: var(--lL);
     transform: scale(1.03);
 }
 
@@ -165,7 +162,7 @@ section {
 }
 
 .info-box span {
-    background: var(--gradientvar);
+    background: var(--o5);
     background-clip: text;
     color: transparent;
     font-size: 2rem;
@@ -180,7 +177,7 @@ section {
 .btn {
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
-    border: 2px solid var(--dark-colour);
+    border: 2px solid var(--o4);
     cursor: pointer;
     font-weight: 500;
     text-wrap: nowrap;
@@ -188,8 +185,8 @@ section {
 }
 
 .btn:hover {
-    background-color: var(--dark-colour);
-    color: var(--lightcolour1);
+    color: var(--o5);
+    border-color: var(--o5);
 }
 
 .socials {
@@ -217,7 +214,7 @@ section {
 }
 
 .experience {
-    background: var(--mid-colour);
+    background: var(--o3);
 }
 
 .experience-info {
@@ -242,8 +239,8 @@ section {
 }
 
 .grid-card {
-    border: 2px solid var(--dark-colour);
-    border-radius: 3rem;
+    border-left: 0.2vw solid var(--o4);
+    border-right: 0.2vw solid var(--o4);
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -251,37 +248,38 @@ section {
     justify-content: left;
     cursor: pointer;
     transition: 0.2 ease-in-out;
+    background-color: transparent;
 }
 
 .grid-card span {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 800;
+    background: var(--o4);
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 1rem;
+}
+
+.grid-card h3 {
+    background: var(--o4);
+    background-clip: text;
+    color: transparent;
+}
+
+.grid-card p {
+    background: var(--o4);
+    background-clip: text;
+    color: transparent;
 }
 
 .grid-card:hover {
     transform: scale(1.02);
-    background-color: var(--dark-colour);
-    color: var(--lightcolour1);
 }
 
 .grid-card:hover span {
-    font-size: 1.5rem;
-    font-weight: 500;
-    background: var(--gradientvar);
-    background-clip: text;
-    color: transparent;
-}
-
-.grid-card:hover h3 {
-    background: var(--gradientvar);
-    background-clip: text;
-    color: transparent;
 }
 
 .grid-card:hover p {
-    background: var(--gradientvar);
-    background-clip: text;
-    color: transparent;
 }
 
 ::-webkit-scrollbar {
@@ -289,15 +287,11 @@ section {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(78, 78, 78);
+    background-color: var(--o3);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(
-        to bottom,
-        var(--lightcolour1),
-        var(--lightcolour2)
-    );
+    background: var(--lD);
 }
 
 .projects-grid {
@@ -315,7 +309,7 @@ section {
     justify-content: center;
     text-align: center;
     gap: 1.5rem;
-    border: 2px solid var(--dark-colour);
+    border: 2px solid var(--o2);
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -323,8 +317,8 @@ section {
 }
 
 .project-card:hover {
-    background-color: var(--dark-colour);
-    color: var(--lightcolour1);
+    background-color: var(--o2);
+    color: var(--l1);
     transform: translateY(-10px) scale(1.02);
 }
 
@@ -334,19 +328,19 @@ section {
 }
 
 .project-card:hover .btn {
-    border: 2px solid var(--lightcolour1);
-    color: var(--lightcolour1);
+    border: 2px solid var(--o5);
+    color: var(--o5);
 }
 
 .project-card:hover .btn:hover {
-    border: 2px solid var(--lightcolour1);
-    background-color: var(--lightcolour1);
-    color: var(--dark-colour);
+    border: 2px solid var(--o5);
+    background-color: var(--o2);
+    color: var(--l2);
 }
 
 .project-card:hover .btn.active {
-    border: 2px solid var(--dark-colour);
-    color: var(--dark-colour);
+    border: 2px solid var(--o2);
+    color: var(--o2);
     pointer-events: none;
 }
 
@@ -378,27 +372,32 @@ footer {
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    background: var(--o2);
+    color: var(--o4);
 }
 
 footer ul {
     display: flex;
     align-items: center;
     gap: 3rem;
+    background: none;
 }
 
 footer ul li a {
-    color: var(--light-colour);
     font-weight: 2rem;
+    color: var(--o4);
 }
 
 .contact {
     font-size: 300;
-    margin-top: 2rem;
+    background: none;
+    color: var(--o4);
 }
 
 .copyright {
     font-size: 300;
-    margin-top: 2rem;
+    background: none;
+    color: var(--o4);
 }
 
 @media (max-width: 1280px) {
