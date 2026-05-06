@@ -1,6 +1,63 @@
 const menuIcon = document.querySelector('#menu-icon');
 const navLinks = document.querySelector('.nav-links');
+const downloadBtn = document.querySelector('#download-btn');
+const contactBtn = document.querySelector('#contact-btn');
+const aboutItch = document.querySelectorAll('#itch-icon')
+const aboutLinkedIn = document.querySelector('#linkedin-icon')
+const gameplays = document.querySelectorAll('#gameplay')
+
+function visitSite(urlLink){
+    window.open(urlLink);
+}
 
 menuIcon.onclick = function(){
     navLinks.classList.toggle('active');
+}
+
+aboutItch[0].onclick = function(){
+    visitSite("https://felipedasilvasavory.itch.io/")
+}
+
+aboutItch[1].onclick = function(){
+    visitSite("https://felipedasilvasavory.itch.io/")
+}
+
+aboutItch[2].onclick = function(){
+    visitSite("https://felipedasilvasavory.itch.io/high-stakes")
+}
+
+aboutItch[3].onclick = function(){
+    visitSite("https://xia-c.itch.io/cat-ural-disaster")
+}
+
+aboutItch[4].classList.toggle('active')
+aboutItch[4].onclick = function(){
+    
+}
+
+aboutItch[5].onclick = function(){
+    visitSite("https://felipedasilvasavory.itch.io/university-pinball-project")
+}
+
+gameplays[0].onclick = function(){
+    visitSite("videos/highstakes.mp4")
+}
+
+gameplays[1].onclick = function(){
+    visitSite("https://www.youtube.com/watch?v=jNWxWzDnJEc")
+}
+
+gameplays[2].classList.toggle('active')
+gameplays[2].onclick = function(){}
+
+gameplays[3].classList.toggle('active')
+gameplays[3].onclick = function(){}
+
+
+aboutLinkedIn.onclick = function(){
+    visitSite("https://www.linkedin.com/in/felipe-da-silva-savory-926714291/")
+}
+
+contactBtn.onclick = function(){
+    visitSite("mailto:s4404529@glos.ac.uk")
 }

@@ -1,5 +1,6 @@
 :root {
     --dark-colour: #193c22cc;
+    --mid-colour: #a1a1a1;
     --lightcolour1: #a7eb29;
     --lightcolour2: #e1eb27;
     --gradientvar: linear-gradient(
@@ -211,24 +212,33 @@ section {
     font-size: 4rem;
     font-weight: 600;
     margin-bottom: 3rem;
+    background: none;
+    color: var(--dark-colour);
 }
 
-.links-info {
+.experience {
+    background: var(--mid-colour);
+}
+
+.experience-info {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
+    background: none;
 }
 
-.links img {
+.experience img {
     width: clamp(10rem, calc(30vw + 1rem), 30rem);
     border-radius: 3rem;
+    background: none;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    background: none;
 }
 
 .grid-card {
@@ -243,19 +253,18 @@ section {
     transition: 0.2 ease-in-out;
 }
 
+.grid-card span {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .grid-card:hover {
     transform: scale(1.02);
     background-color: var(--dark-colour);
     color: var(--lightcolour1);
 }
 
-.grid-card i {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    background: transparent;
-}
-
-.grid-card span {
+.grid-card:hover span {
     font-size: 1.5rem;
     font-weight: 500;
     background: var(--gradientvar);
@@ -263,12 +272,16 @@ section {
     color: transparent;
 }
 
-.grid-card h3 {
-    background: transparent;
+.grid-card:hover h3 {
+    background: var(--gradientvar);
+    background-clip: text;
+    color: transparent;
 }
 
-.grid-card p {
-    background: transparent;
+.grid-card:hover p {
+    background: var(--gradientvar);
+    background-clip: text;
+    color: transparent;
 }
 
 ::-webkit-scrollbar {
@@ -331,6 +344,12 @@ section {
     color: var(--dark-colour);
 }
 
+.project-card:hover .btn.active {
+    border: 2px solid var(--dark-colour);
+    color: var(--dark-colour);
+    pointer-events: none;
+}
+
 .project-card h3 {
     font-size: 2rem;
     font-weight: 500;
@@ -391,7 +410,7 @@ footer ul li a {
         gap: 3rem;
     }
 
-    .links-info {
+    .experience-info {
         flex-direction: column;
     }
 }
