@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: clamp(4rem, calc(7vw + 1 rem), 5rem);
     font-family: "Poppins";
     text-decoration: none;
     scroll-behavior: smooth;
@@ -138,7 +139,7 @@ section {
 }
 
 .about img {
-    width: 30vw;
+    width: clamp(10rem, calc(30vw + 1rem), 30rem);
     border-radius: 50%;
 }
 
@@ -220,7 +221,7 @@ section {
 }
 
 .links img {
-    width: 24vw;
+    width: clamp(10rem, calc(30vw + 1rem), 30rem);
     border-radius: 3rem;
 }
 
@@ -249,13 +250,13 @@ section {
 }
 
 .grid-card i {
-    font-size: 2vw;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     background: transparent;
 }
 
 .grid-card span {
-    font-size: 2vw;
+    font-size: 1.5rem;
     font-weight: 500;
     background: var(--gradientvar);
     background-clip: text;
@@ -263,12 +264,10 @@ section {
 }
 
 .grid-card h3 {
-    font-size: 1.5vw;
     background: transparent;
 }
 
 .grid-card p {
-    font-size: 1vw;
     background: transparent;
 }
 
@@ -317,7 +316,7 @@ section {
 }
 
 .project-card img {
-    width: 15vw;
+    width: clamp(15rem, calc(15vw + 1rem), 10rem);
     border-radius: 1rem;
 }
 
@@ -385,7 +384,6 @@ footer ul li a {
 
 @media (max-width: 1280px) {
     header {
-        padding: 1rem 2rem;
         gap: 2rem;
     }
 
@@ -401,11 +399,7 @@ footer ul li a {
 @media (max-width: 768px) {
     header {
         gap: 1rem;
-        padding: 1rem 1rem;
-    }
-
-    header .logo {
-        font-size: 1rem;
+        padding: 2rem 3rem;
     }
 
     header .visit-btn {
@@ -418,10 +412,6 @@ footer ul li a {
 
     .grid {
         grid-template-columns: repeat(1, 1fr);
-    }
-
-    .links-info img {
-        width: 70vw;
     }
 }
 
@@ -455,16 +445,12 @@ footer ul li a {
     }
 
     header {
-        padding: 1rem 5rem;
-        gap: 8rem;
+        padding: 1rem 10vw;
+        gap: 6vw;
     }
 
     header .logo {
         font-size: 1.5rem;
-    }
-
-    .about-container img {
-        width: 80vw;
     }
 
     footer ul {
