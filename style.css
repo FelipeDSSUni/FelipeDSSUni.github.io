@@ -67,7 +67,7 @@ header {
 }
 
 .logo {
-    font-size: 3rem;
+    font-size: 8vw;
     font-weight: 600;
     text-wrap: nowrap;
     transition: 0.3s ease-in-out;
@@ -439,6 +439,9 @@ footer ul li a {
 @media (width >= 768px) {
     header {
         flex-direction: row;
+    }
+    .logo {
+        font-size: 3rem;
     }
 }
 
