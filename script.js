@@ -1,5 +1,3 @@
-const menuIcon = document.querySelector('#menu-icon');
-const navLinks = document.querySelector('.nav-links');
 const downloadBtn = document.querySelector('#download-btn');
 const contactBtn = document.querySelector('#contact-btn');
 const aboutItch = document.querySelectorAll('#itch-icon')
@@ -10,32 +8,24 @@ function visitSite(urlLink){
     window.open(urlLink);
 }
 
-menuIcon.onclick = function(){
-    navLinks.classList.toggle('active');
-}
-
 aboutItch[0].onclick = function(){
     visitSite("https://felipedasilvasavory.itch.io/")
 }
 
 aboutItch[1].onclick = function(){
-    visitSite("https://felipedasilvasavory.itch.io/")
-}
-
-aboutItch[2].onclick = function(){
     visitSite("https://felipedasilvasavory.itch.io/high-stakes")
 }
 
-aboutItch[3].onclick = function(){
+aboutItch[2].onclick = function(){
     visitSite("https://xia-c.itch.io/cat-ural-disaster")
 }
 
-aboutItch[4].classList.toggle('active')
-aboutItch[4].onclick = function(){
+aboutItch[3].classList.toggle('active')
+aboutItch[3].onclick = function(){
     
 }
 
-aboutItch[5].onclick = function(){
+aboutItch[4].onclick = function(){
     visitSite("https://felipedasilvasavory.itch.io/university-pinball-project")
 }
 
