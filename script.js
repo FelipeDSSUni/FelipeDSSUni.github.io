@@ -3,7 +3,6 @@ const contactBtn = document.querySelector("#contact-btn");
 const aboutItch = document.querySelectorAll("#itch-icon");
 const aboutLinkedIn = document.querySelector("#linkedin-icon");
 const gameplays = document.querySelectorAll("#gameplay");
-const videos = document.querySelectorAll("#project-media");
 
 function visitSite(urlLink) {
     window.open(urlLink);
@@ -49,5 +48,3 @@ aboutLinkedIn.onclick = function () {
 contactBtn.onclick = function () {
     visitSite("mailto:s4404529@glos.ac.uk");
 };
-
-videos[0].play();

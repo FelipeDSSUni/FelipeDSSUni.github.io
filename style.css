@@ -159,7 +159,7 @@ p {
 }
 
 .about img {
-    width: clamp(10rem, calc(30vw + 1rem), 30rem);
+    width: clamp(10rem, calc(40vw + 10rem), 80rem);
     border-radius: 50%;
 }
 
@@ -261,7 +261,7 @@ p {
     background: none;
 }
 
-#project-media {
+.project-media {
     width: 100%;
     object-fit: contain;
     overflow-clip-margin: content-box;
@@ -341,7 +341,7 @@ p {
     margin-top: -15px;
 }
 
-.project-card:hover #project-media {
+.project-card:hover .project-media {
     filter: saturate(100%);
 }
 
@@ -519,6 +519,10 @@ li a:hover::before {
     }
     .project-card h3 {
         font-size: 2rem;
+    }
+    .about img {
+        width: clamp(10rem, calc(40vw + 1rem), 30rem);
+        border-radius: 50%;
     }
 }
 
