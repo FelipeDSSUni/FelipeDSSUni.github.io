@@ -68,6 +68,11 @@ small {
     background: none;
 }
 
+h2 {
+    background: none;
+    color: var(--o4);
+}
+
 h3 {
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -211,7 +216,7 @@ p {
 }
 
 .projects {
-    padding: 8rem 2%;
+    padding: 1rem;
     width: 100%;
     position: relative;
 }
@@ -355,6 +360,9 @@ p {
 
 .experience {
     background: var(--o3);
+    padding: 1rem;
+    width: 100%;
+    position: relative;
 }
 
 .experience-info {
@@ -412,10 +420,6 @@ p {
     color: transparent;
 }
 
-.grid-card:hover {
-    transform: scale(1.02);
-}
-
 footer {
     bottom: 0;
     left: 0;
@@ -424,6 +428,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding-top: 1rem;
     align-items: center;
     justify-content: center;
     background: var(--o2);
@@ -494,6 +499,115 @@ li a:hover::before {
     background: var(--lD);
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.project-card {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.portfolio-page {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: none;
+}
+
+.portfolio-media {
+    aspect-ratio: 16 / 9;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    width: calc(100%);
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    background: none;
+}
+
+.portfolio-card-title {
+    text-align: left;
+    color: var(--o5);
+    background-color: var(--o2);
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 100%;
+    margin: 8px 0;
+    padding: 24px;
+    line-height: 1.44;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.portfolio-details {
+    background: none;
+    display: flex;
+    position: relative;
+    gap: 1rem;
+    justify-content: right;
+}
+
+.portfolio-details div {
+    background: none;
+}
+
+.portfolio-card-container {
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 0 0 32px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.portfolio-card {
+    text-align: left;
+    color: var(--o4);
+    background-color: var(--o2);
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 100%;
+    margin: 8px 0;
+    padding: 24px;
+    line-height: 1.44;
+    display: inline-block;
+}
+
+.portfolio-section .portfolio-media {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.portfolio-page p {
+    font-size: 1.125rem;
+    background: none;
+    text-align: left;
+    margin-top: -15px;
+}
+
+.portfolio-page h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: var(--o5);
+}
+
 @media (max-width: 1280px) {
     .experience-info {
         flex-direction: column;
@@ -523,6 +637,22 @@ li a:hover::before {
     .about img {
         width: clamp(10rem, calc(40vw + 1rem), 30rem);
         border-radius: 50%;
+    }
+
+    .portfolio-card-container .portfolio-media {
+        width: calc(50% - 16px);
+        margin: 8px;
+    }
+
+    .portfolio-card-container .portfolio-card {
+        width: calc(50% - 16px);
+        margin: 8px;
+        font-size: 1.125rem;
+    }
+
+    .portfolio-card-title {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
