@@ -148,9 +148,6 @@ p {
 
 .about {
     min-height: 90vh;
-}
-
-.about {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +158,7 @@ p {
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    margin: 1rem;
 }
 
 .about img {
@@ -216,7 +214,7 @@ p {
 }
 
 .projects {
-    padding: 1rem;
+    padding: rem;
     width: 100%;
     position: relative;
 }
@@ -381,7 +379,7 @@ p {
 
 .experience {
     background: var(--o3);
-    padding: 1rem;
+    padding: rem;
     width: 100%;
     position: relative;
 }
