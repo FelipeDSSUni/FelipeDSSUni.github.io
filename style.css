@@ -597,7 +597,7 @@ li a:hover::before {
     margin: 0 0 32px;
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .portfolio-card {
