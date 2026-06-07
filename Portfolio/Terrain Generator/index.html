@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Felipe Da Silva Savory</title>
+        <link rel="stylesheet" href="../../style.css" />
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <header class="header">
+                <span class="header-logo">
+                    <a href="../../" class="logo"
+                        ><span>Felipe Da Silva Savory</span></a
+                    >
+                    <small>Game Developer</small>
+                </span>
+
+                <span class="header-links">
+                    <a
+                        href="../../CV.pdf"
+                        download="CV.pdf"
+                        class="visit-btn"
+                        id="download-btn"
+                    >
+                        Download CV
+                    </a>
+                    <div class="socials">
+                        <img
+                            src="../../logos/itchio-logo-textless-white.svg"
+                            alt=""
+                            id="itch-icon"
+                        />
+                        <img
+                            src="../../logos/LinkedIn.svg"
+                            alt=""
+                            id="linkedin-icon"
+                        />
+                    </div>
+                </span>
+            </header>
+
+            <section id="portfolio" class="portfolio">
+                <section class="portfolio-page">
+                    <video
+                        playsinline
+                        controls
+                        autoplay
+                        muted
+                        loop
+                        loading="lazy"
+                        class="portfolio-media"
+                    >
+                        <source
+                            src="../../videos/terrain-generator.mp4"
+                            type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div class="portfolio-card-title">
+                        <h2>Terrain Generator</h2>
+                        <div class="portfolio-details">
+                            <div class="detail-logo">
+                                <img
+                                    src="../../logos/group.svg"
+                                    alt=""
+                                    class="detail-people"
+                                />
+                                <small>1</small>
+                            </div>
+
+                            <div class="detail-logo">
+                                <img
+                                    src="../../logos/clock.svg"
+                                    alt=""
+                                    class="detail-time"
+                                />
+                                <small>1 Month</small>
+                            </div>
+
+                            <div class="detail-logo">
+                                <img
+                                    src="../../logos/software.svg"
+                                    alt=""
+                                    class="detail-time"
+                                />
+                                <small>Godot Engine</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        A noise based terrain generation tool for Godot Engine.
+                    </div>
+
+                    <section class="portfolio-section">
+                        <h3>Starting Experience</h3>
+
+                        <p>
+                            I had tackled terrain generation in Unity before and
+                            while GDScript and Godot are familiar to me, making
+                            tools was a first time experience.
+                        </p>
+                    </section>
+
+                    <section class="portfolio-section">
+                        <h3>Terrain</h3>
+
+                        <div class="portfolio-card-container">
+                            <video
+                                playsinline
+                                autoplay
+                                muted
+                                loop
+                                loading="lazy"
+                                class="portfolio-media"
+                            >
+                                <source
+                                    src="../../videos/Portfolio/terraingenerator.mp4"
+                                    type="video/mp4"
+                                />
+                                Your browser does not support the video tag.
+                            </video>
+
+                            <img
+                                src="../../images/Portfolio/terrain.png"
+                                alt=""
+                                class="portfolio-media"
+                            />
+                        </div>
+
+                        <p>
+                            The plane generation script was translated from C#
+                            in Unity to GDScript for Godot. This involved
+                            rewriting many parts of my script but the
+                            mathematics stayed mostly the same, except for
+                            having to swap the axes.
+                        </p>
+                        <p>
+                            The elevation (y axis) of the plane is decided using
+                            generated noise. Godot does most of this work for
+                            me, I originally planned to script my own noise
+                            generation math, but unfortunately ran out of time.
+                        </p>
+                    </section>
+
+                    <section class="portfolio-section">
+                        <h3>Tool</h3>
+
+                        <div class="portfolio-card-container">
+                            <video
+                                playsinline
+                                autoplay
+                                muted
+                                loop
+                                loading="lazy"
+                                class="portfolio-media"
+                            >
+                                <source
+                                    src="../../videos/Portfolio/terraingenerator2.mp4"
+                                    type="video/mp4"
+                                />
+                                Your browser does not support the video tag.
+                            </video>
+
+                            <video
+                                playsinline
+                                autoplay
+                                muted
+                                loop
+                                loading="lazy"
+                                class="portfolio-media"
+                            >
+                                <source
+                                    src="../../videos/Portfolio/terraingenerator3.mp4"
+                                    type="video/mp4"
+                                />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <p>
+                            The tool is set up as a Godot plugin. It has a UI
+                            panel that is defaulted to the bottom dock, with
+                            slidable and scrollable parts. Godot by default
+                            already allows it to be moved around and separated
+                            into a different window.
+                        </p>
+                        <p>
+                            The preview I made for the mesh and noise, simply
+                            copy the same values from the selected terrain to
+                            display the correct information. All the terrains
+                            generation variables are able to be changed through
+                            the tool panel and only regenerates itself when a
+                            value is changed. Noise like before is something I
+                            wanted to do more for, but I implemented enough
+                            options to be used for terrain generation.
+                        </p>
+                        <p>
+                            I ran out of time to have a save mesh or noise
+                            option, but along with generating collision, this
+                            could be done with the default Godot features.
+                        </p>
+                    </section>
+
+                    <section class="portfolio-section">
+                        <h3>Learned Experience</h3>
+
+                        <p>
+                            I learnt a lot about mesh generation in Godot
+                            Engine, but I have a lot more to get right with it,
+                            mostly lighting and normals. When it came to
+                            creating tools for the engine, I gained plenty of
+                            confidence in the task. I'll definitely try my hand
+                            at creating more tools in the future, ones that will
+                            make my work flow more efficient.
+                        </p>
+                    </section>
+                </section>
+            </section>
+
+            <footer>
+                <ul>
+                    <li>
+                        <a href="../../index.html#about">About</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html#experience">Experience</a>
+                    </li>
+                </ul>
+
+                <p class="contact">s4404529@glos.ac.uk</p>
+                <p class="copyright">
+                    © All Rights Reserved | Felipe Da Silva Savory
+                </p>
+            </footer>
+        </div>
+
+        <script src="../../script.js"></script>
+    </body>
+</html>

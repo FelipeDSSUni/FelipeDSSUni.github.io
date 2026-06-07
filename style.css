@@ -305,7 +305,7 @@ p {
 .project-card:hover {
     background-color: var(--o2);
     color: var(--l1);
-    transform: translateY(-10px) scale(1.02);
+    /*transform: translateY(-10px) scale(1.02);*/
 }
 
 .project-card:hover .btn {
@@ -519,11 +519,11 @@ li a:hover::before {
 @keyframes appear {
     from {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateY(100px);
     }
     to {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 
